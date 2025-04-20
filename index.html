@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Feliz Aniversário Boboca</title>
+  <title>Feliz Aniversário Alice</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
@@ -75,7 +75,7 @@
     .spider, .spider2, .spider3 {
       width: 60px;
       height: 60px;
-      background-image: url('https://i.imgur.com/Jw3Nf9y.gif');
+      background-image: url('https://www.freepngimg.com/thumb/spider/28241-5-spider-png.png');
       background-size: contain;
       background-repeat: no-repeat;
       position: absolute;
@@ -179,31 +179,39 @@
   <div class="spider2"></div>
   <div class="spider3"></div>
 
-  <img src="https://i.imgur.com/vgPHNhv.png" class="web top-left" alt="Teia" />
-  <img src="https://i.imgur.com/vgPHNhv.png" class="web top-right" alt="Teia" />
-  <img src="https://i.imgur.com/vgPHNhv.png" class="web bottom-left" alt="Teia" />
-  <img src="https://i.imgur.com/vgPHNhv.png" class="web bottom-right" alt="Teia" />
+  <img src="https://www.pngfind.com/pngs/m/12-120338_transparent-halloween-web-png-web-halloween-png-png.png" class="web top-left" alt="Teia" />
+  <img src="https://www.pngfind.com/pngs/m/12-120338_transparent-halloween-web-png-web-halloween-png-png.png" class="web top-right" alt="Teia" />
+  <img src="https://www.pngfind.com/pngs/m/12-120338_transparent-halloween-web-png-web-halloween-png-png.png" class="web bottom-left" alt="Teia" />
+  <img src="https://www.pngfind.com/pngs/m/12-120338_transparent-halloween-web-png-web-halloween-png-png.png" class="web bottom-right" alt="Teia" />
 
-  <img src="https://i.imgur.com/j5YtclD.png" class="bat" style="top: 10%; left: -100px; animation-delay: 0s;" alt="Morcego" />
-  <img src="https://i.imgur.com/j5YtclD.png" class="bat" style="top: 30%; left: -150px; animation-delay: 4s;" alt="Morcego" />
-  <img src="https://i.imgur.com/j5YtclD.png" class="bat" style="top: 60%; left: -200px; animation-delay: 8s;" alt="Morcego" />
+  <img src="https://www.freepngimg.com/thumb/bat/18-182627_bat-transparent-background-halloween-png.png" class="bat" style="top: 10%; left: -100px; animation-delay: 0s;" alt="Morcego" />
+  <img src="https://www.freepngimg.com/thumb/bat/18-182627_bat-transparent-background-halloween-png.png" class="bat" style="top: 30%; left: -150px; animation-delay: 4s;" alt="Morcego" />
+  <img src="https://www.freepngimg.com/thumb/bat/18-182627_bat-transparent-background-halloween-png.png" class="bat" style="top: 60%; left: -200px; animation-delay: 8s;" alt="Morcego" />
 
   <div class="container">
-    <button onclick="showMessage()">Clique aqui, boboca</button>
+    <button onclick="showMessage()">Clique aqui, alice</button>
     <div class="message" id="loveMessage">te amo boboca, feliz aniversário ❤️</div>
   </div>
   <div class="decor">
-    <img src="https://i.imgur.com/Vd5XEK3.png" alt="Bucky" />
-    <img src="https://i.imgur.com/H0zSxnU.png" alt="Ghostface" />
+    <img src="https://www.pngwing.com/pt/free-png-ywvli" alt="Bucky" />
+    <img src="https://www.pngall.com/ghostface-png/" alt="Ghostface" />
   </div>
 
   <audio id="sound" src="https://www.myinstants.com/media/sounds/pop-up-off.mp3"></audio>
 
   <script>
     function showMessage() {
-      document.getElementById('loveMessage').style.display = 'block';
-      const audio = document.getElementById('sound');
-      audio.play();
+      const message = document.getElementById('loveMessage');
+      message.style.display = 'block';
+      message.style.opacity = 1;
+      try {
+        const audio = document.getElementById('sound');
+        audio.play().catch(() => {
+          console.log('Som bloqueado pelo navegador');
+        });
+      } catch (e) {
+        console.error('Erro ao tentar tocar o som:', e);
+      }
     }
   </script>
 </body>
