@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presente de Aniversário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <button id="btnPresent">Clique aqui para abrir seu presente</button>
+    <div id="msgParabens" class="hidden">
+      <p>Meus parabéns, meu anjo. Te amo muito.</p>
+      <img src="assets/aranha.gif" alt="Aranha" class="aranha">
+      <img src="assets/ghostface.png" alt="Ghostface" class="ghostface">
+      <img src="assets/bucky.jpg" alt="Bucky" class="bucky">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
