@@ -8,7 +8,8 @@
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #1c1c1c, #660000);
+      background: url('imagens/fundo.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: white;
       font-family: 'Comic Sans MS', cursive, sans-serif;
       overflow: hidden;
@@ -35,10 +36,10 @@
     }
     .decoracoes img {
       position: absolute;
-      width: 80px;
       z-index: 1;
     }
     #aranha {
+      width: 80px;
       animation: andar 10s linear infinite;
     }
     @keyframes andar {
@@ -70,12 +71,12 @@
 
   <div class="decoracoes">
     <img id="aranha" src="imagens/aranha.png" alt="aranha">
-    <img style="top:10px; left:10px;" src="imagens/teia.png" alt="teia">
-    <img style="top:10px; right:10px;" src="imagens/teia.png" alt="teia">
-    <img style="bottom:20px; left:20px;" src="imagens/morcego.png" alt="morcego">
-    <img style="bottom:20px; right:20px;" src="imagens/morcego.png" alt="morcego">
-    <img style="top:60%; left:10%;" src="imagens/bucky.png" alt="bucky">
-    <img style="top:30%; right:10%;" src="imagens/ghostface.png" alt="ghostface">
+    <img style="top:10px; left:10px; width: 150px;" src="imagens/teia.png" alt="teia">
+    <img style="top:10px; right:10px; width: 150px;" src="imagens/teia.png" alt="teia">
+    <img style="bottom:20px; left:20px; width: 150px;" src="imagens/morcego.png" alt="morcego">
+    <img style="bottom:20px; right:20px; width: 150px;" src="imagens/morcego.png" alt="morcego">
+    <img style="top:55%; left:10%; width: 200px;" src="imagens/bucky.png" alt="bucky">
+    <img style="top:70%; right:10%; width: 200px;" src="imagens/ghostface.png" alt="ghostface">
   </div>
 
   <div class="neblina"></div>
